@@ -4,7 +4,7 @@
 /* ==============================
 =========scroll 1 ============
 ============================== */
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Anton&subset=latin-ext,vietnamese');
 *[draggable=true] {
@@ -1128,7 +1128,9 @@ a {
 }
 
 .con3-mid {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+    /*font-size: 1.2em;*/
 }
 
 
@@ -1140,6 +1142,7 @@ a {
   /* color:#fff; */
   /*margin: 2vw;*/
   width: 100vw;
+
   /*   display: flex; */
   flex-wrap: nowrap;
   /* overflow-x: hidden;
