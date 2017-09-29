@@ -17,5 +17,6 @@ The rules I set are:
 
 ---
 **Tracking**
+
 [check it out](https://sssirius.github.io/niel_DesignMethods.Fa17/tracking/#index.html)
 
