@@ -1,4 +1,4 @@
-navegation:
+navigation:
 
 Homepage:
 ![Homepage](welcome.png)
@@ -13,13 +13,13 @@ Glaze when hover
 ![Glaze](glaze_all.png)
 
 Scenario
-![Scenario](scenario.png)
+![Scenario](scenario1.png)
 
 Scenario detail
-![Scenario](scenario.png)
+![Scenario](scenario2.png)
 
 Detail
 ![Detail](detail.png)
 
 DEMO
-![DEMO(domo.gif)
+![DEMO](domo.gif)
