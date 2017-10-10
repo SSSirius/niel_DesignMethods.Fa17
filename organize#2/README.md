@@ -1,3 +1,3 @@
 navegation:
 Homepage:
-[Homepage](welcome.png)
+![Homepage](welcome.png)
