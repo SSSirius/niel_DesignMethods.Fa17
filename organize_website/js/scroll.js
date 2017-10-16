@@ -1,15 +1,15 @@
 $(function () {
  var time=[
         {position:0, name:"Neolithic Age"},
-        {position:10, name:"Shang dynasty "},
+        {position:10, name:"Shang Dynasty "},
         {position:14, name:"Warring States Period"},
-        {position:16, name:"Han dynasty"},
-        {position:21, name:"Sui dynasty"},
-        {position:29, name:"Tang dynasty"},
-        {position:37, name:"Song dynasty"},
-        {position:54, name:"Yuan dynasty"},
-        {position:62, name:"Ming dynasty"},
-        {position:76, name:"Qing dynasty"}
+        {position:16, name:"Han Dynasty"},
+        {position:21, name:"Sui Dynasty"},
+        {position:29, name:"Tang Dynasty"},
+        {position:37, name:"Song Dynasty"},
+        {position:54, name:"Yuan Dynasty"},
+        {position:62, name:"Ming Dynasty"},
+        {position:76, name:"Qing Dynasty"}
  ]
 
   var size = $(".period-img").length;

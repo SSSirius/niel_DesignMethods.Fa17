@@ -30,7 +30,7 @@
       <div class=" col-md-2 animated slideInLeft detail-back" onClick="javascript :history.back(-1);""> &#9664;</div>
 <div class="col-md-offset-2 col-md-10 detail-title animated slideInLeft">  {{detail.name}}</div>
 <div class="col-md-offset-2 col-md-10 detail-subtitle animated slideInLeft"> {{detail.period}} </div>
-<div class="col-md-offset-2 col-md-10 detail-subtitle animated slideInLeft">  {{detail.klin}}</div>
+<div ng-show="{{detail.kiln}}" class="col-md-offset-2 col-md-10 detail-subtitle animated slideInLeft"> From: {{detail.kiln}}</div>
 
     
 
