@@ -872,7 +872,7 @@
 
 .fadeOutUpSlow {
   animation-name: fadeOutUpSlow;
-  animation-delay:2.5s;
+  animation-delay:2s;
 }
 
 @keyframes fadeOutUpSlowtwo {
@@ -888,7 +888,7 @@
 
 .fadeOutUpSlowtwo {
   animation-name: fadeOutUpSlowtwo;
-  animation-delay:2s;
+  animation-delay:1.5s;
 }
 
 @keyframes flip {
