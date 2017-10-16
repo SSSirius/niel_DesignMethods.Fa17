@@ -1,62 +1,82 @@
-// $(function () {
+$(function () {
+ var time=[
+        {position:0, name:"Neolithic Age"},
+        {position:10, name:"Shang dynasty "},
+        {position:14, name:"Warring States Period"},
+        {position:16, name:"Han dynasty"},
+        {position:21, name:"Sui dynasty"},
+        {position:29, name:"Tang dynasty"},
+        {position:37, name:"Song dynasty"},
+        {position:54, name:"Yuan dynasty"},
+        {position:62, name:"Ming dynasty"},
+        {position:76, name:"Qing dynasty"}
+ ]
+
+  var size = $(".period-img").length;
+  var barw = $("#bar").width();
+  // if($(".period-img")!==""){
+  var end = $(".period-img")[66].x - barw / 8;
+// }
+  $("#timebar").draggable({
+    // handle: "#timebar",
+    axis: "x",
+    containment: "parent",
+    scroll: false,
+    // scroll: true, scrollSensitivity: 100 
+    drag: function () {
+      var btnp = $("#timebar").position().left;
+      // $(function(){
 
 
-//   var size = $(".period-img").length;
-//   var barw = $("#bar").width();
-//   var end = $(".period-img")[66].x - barw / 8;
-//   $("#timebar").draggable({
-//     // handle: "#timebar",
-//     axis: "x",
-//     containment: "parent",
-//     scroll: false,
-//     // scroll: true, scrollSensitivity: 100 
-//     drag: function () {
-//       var btnp = $("#timebar").position().left;
-//       // $(function(){
+      var upw = $("#up").width();
+      var dnw = $("#down").width();
+      // var end=$(".period-img")[66].x;
+      // console.log(end);
+
+      var ofleft = -btnp / barw * (end);
 
 
-//       var upw = $("#up").width();
-//       var dnw = $("#down").width();
-//       // var end=$(".period-img")[66].x;
-//       // console.log(end);
+      $("#up").offset({
+        left: ofleft
+      });
+      $("#down").offset({
+        left: ofleft
+      });
+for (var i=0;i < time.length;i++){
+     
+      if ( btnp/barw * 100 > time[i].position){
+      
+       $("#dynasty").html(time[i].name);
 
-//       var ofleft = -btnp / barw * (end);
+        }
+      }
+      $.each($(".period-img"), function (i, img) {
 
+        var mid = barw / 2 - 30;
+        var hi = 250 - Math.abs((this.x - mid) / 3.5);
 
-//       $("#up").offset({
-//         left: ofleft
-//       });
-//       $("#down").offset({
-//         left: ofleft
-//       });
-
-//       $.each($(".period-img"), function (i, img) {
-
-//         var mid = barw / 2 - 30;
-//         var hi = 250 - Math.abs((this.x - mid) / 3.5);
-
-//         $(this).height(hi);
-//         $(this).fadeTo(10, Math.abs(hi / 240));
-//         // console.log(hi/200);
+        $(this).height(hi);
+        $(this).fadeTo(10, Math.abs(hi / 240));
+        // console.log(hi/200);
 
 
 
 
-//         // }
+        // }
 
 
 
-//       });
+      });
 
 
 
-//       // $(".period-img")[5].css("width", "400px");
+      // $(".period-img")[5].css("width", "400px");
 
 
-//     }
-//   }, );
+    }
+  }, );
   
-// });
+});
 
 
 // // $( "#timebar" ).draggable({
