@@ -35,7 +35,7 @@ $(function () {
 
       var ofleft = -btnp / barw * (end);
 
-
+      var wh=$( window ).height();
       $("#up").offset({
         left: ofleft
       });
@@ -53,7 +53,7 @@ for (var i=0;i < time.length;i++){
       $.each($(".period-img"), function (i, img) {
 
         var mid = barw / 2 - 30;
-        var hi = 250 - Math.abs((this.x - mid) / 3.5);
+        var hi = wh/3.5 - Math.abs((this.x - mid) / 3.5);
 
         $(this).height(hi);
         $(this).fadeTo(10, Math.abs(hi / 240));

@@ -56,6 +56,7 @@ var barw=$("#bar").width();
   var dnw = $("#down").width();
 
   
+      var wh=$( window ).height();
  var upl=-btnp/barw*(upw);
  var dnl=-btnp/barw*(dnw);
   
@@ -74,7 +75,7 @@ var barw=$("#bar").width();
   // $(this).load(function(){
   //     }else {
     var mid = barw/2-30;
-    var hi= 250 - Math.abs((this.x - mid)/3.5);
+    var hi= wh/3.5 - Math.abs((this.x - mid)/3.5);
     
       $( this ).height( hi );
        $( this ).fadeTo(10, Math.abs(hi/240));
