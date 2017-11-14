@@ -421,6 +421,7 @@ a {
     border:solid 1px #333;
     border-radius: 5px;
     color: #333;
+    z-index: 999;
 }
 .b-btn:hover{
     position: fixed;
