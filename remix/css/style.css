@@ -96,6 +96,85 @@ a {
   border: 0.5px solid #000;
   border-radius: 10px;
 }
+.hamburger {
+  position: fixed;
+  left: 5px;
+  top:5px;
+  width: 30px;
+  height: 30px;
+  z-index: 100000;
+  /* Hambuger hover animation */
+}
+.leftmenu{
+  position: fixed;
+  left: -81px;
+  top:0px;
+  width: 180px;
+  height: 100vh;
+  background-color: #fff;
+  font-size: 18px;
+  display: list-item;
+  padding-top: 44px;
+transition: 0.5s;
+opacity: 0;
+
+}
+
+.leftmenu a{
+  width: 160px;
+ padding:7px 10px;
+  text-decoration: none;
+  border-bottom: none;
+  text-align: center;
+  margin: 0;
+  display: block;
+  font-weight: 200;
+  color: #666;
+  border-right:  solid 1px #ddd;
+}
+.leftmenu a:active{
+  width: 100%;
+  
+  text-decoration: none;;
+}
+.leftmenu a:hover{
+  color: #000;
+
+ /*border-bottom: solid 1px #fff;*/
+ background: #ddd;
+
+
+}
+.hamburger span {
+  display: block;
+  margin: 5px auto;
+  background-color: #ddd;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  transition: all .5s ease;
+}
+.hamburger:hover span:first-child {
+  transform: translateY(3px);
+}
+.hamburger:hover span:last-child {
+  transform: translateY(-3px);
+}
+.hamburger:hover .leftmenu {
+ left: 0px;
+ transition: 0.5s;
+ opacity: 1;
+}
+/* Hambuger click animation to cross */
+.hamburger.is-opened span:first-child {
+  transform: translateY(20px) rotate(45deg);
+}
+.hamburger.is-opened span:nth-child(2) {
+  transform: scaleX(0);
+}
+.hamburger.is-opened span:last-child {
+  transform: translateY(-20px) rotate(-45deg);
+}
 
 .scroll1-box {
   /* color:#fff; */
