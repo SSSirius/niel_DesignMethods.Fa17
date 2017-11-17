@@ -254,7 +254,7 @@ opacity: 0;
 }
 
 .scrolling-2 {
-  font-size: 5em;
+  font-size: 3em;
       margin: 0;
   font-family: 'Noto Serif', serif;
   color: #000;
@@ -1595,6 +1595,7 @@ white-space: nowrap;
   .con-3{
     font-size: 0.8em;
   }
+  .scrolling-2{ font-size:1.4em;}
 }
 @media screen and (max-width: 768px) {
   
